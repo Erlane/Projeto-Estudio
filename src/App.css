@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+	justify-content: space-between;
+	padding-left: 1.5rem;
+}
+
+.menu-container {
+  width: 50vw;
+	display: flex;
+	align-items: center;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
