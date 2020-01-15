@@ -11,7 +11,7 @@ class Home extends React.Component {
         return (
             <div>
                 <header>
-                    <section className='menu'>
+                    <div className='menu'>
                         <div>
                             <h1>ToDoFlix</h1>
                         </div>
@@ -19,7 +19,9 @@ class Home extends React.Component {
                             <p>categorias</p>
                             <button>adicionar filmes</button>
                         </div>
-                    </section>
+                    </div>
+                </header>
+                <section>
                     <div>
                         <figure>
                         <img src={ImageForm}></img>
@@ -68,8 +70,6 @@ class Home extends React.Component {
                             </label>
                         </form>
                     </div>
-                </header>
-                <section>
                     <img src={ImageHome}></img>
                 </section>
             </div>
