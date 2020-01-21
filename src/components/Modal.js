@@ -12,6 +12,7 @@ class Modal extends Component {
         nome: null,
         descricao: null,
         status: null,
+        imagemExibicao: null,
     }
   }
 
@@ -37,16 +38,6 @@ class Modal extends Component {
     this.setState({
         imagemExibicao: ev.target.value,
     });
-  }
-
-  changeNota = (ev) => {
-    this.setState({
-        nota: ev.target.value,
-    });
-  }
-
-  handleChange(event) {
-    this.setState({value: event.target.value});
   }
 
   handleSubmit(event) {
@@ -96,7 +87,7 @@ class Modal extends Component {
               </label> 
               <spam className='spam-exibicao'> 
                 <input  className='ImagemExibicao'
-                  // type='url' 
+                  type='url'
                   type="image"
                   onChange={this.changeImagemExibicao}
                   value={this.state.imagemExibicao} 
